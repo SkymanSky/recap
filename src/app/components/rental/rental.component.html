@@ -1,0 +1,27 @@
+<h3>Rentals</h3>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Brand Name</th>
+            <th>Model Name</th>
+            <th>Customer Names </th>
+            <th>Rent Date</th>
+            <th>Rent End Date</th>
+            <th>Rent Return Date</th>
+        </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let rental of rentals">
+        <td>{{rental.id}}</td>
+        <td>{{rental.brandName}}</td>
+        <td>{{rental.modelName}}</td>
+        <td>{{rental.customerFirstAndLastName}}</td>
+        <td>{{rental.rentDate}}</td>
+        <td>{{rental.rentEndDate}}</td>
+        <td>{{rental.returnDate}}</td>
+    </tr>
+</tbody>
+    
+</table>

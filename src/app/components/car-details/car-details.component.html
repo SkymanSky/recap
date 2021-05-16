@@ -1,0 +1,11 @@
+<!-- <app-brand></app-brand> -->
+<app-car-images></app-car-images>
+<div *ngFor="let cardetail of carDetails" class="card" style="w-100 p-3;" align="center">
+    <!-- <img src="{{cardetail.imagePath}}" class="card-img-top" alt="..."> -->
+    <div  class="card-body" align="center">
+      <h5 class="card-title">{{cardetail.modelName}}</h5>
+      <h3 class="card-title">{{cardetail.brandName}}</h3>
+      <p class="card-text">{{cardetail.modelYear}}</p>
+      <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+    </div>
+  </div>
